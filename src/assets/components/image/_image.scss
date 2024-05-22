@@ -1,0 +1,48 @@
+.custom-file-container {
+    &-upload {
+        @extend %flex-center;
+        gap: 10px;
+        position: relative;
+
+        &-btn {
+            background-color: #C56E4F;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 98%;
+            height: 300px;
+
+            .label {
+                font-size: $text-sm;
+                @extend %flex-center;
+                height: 300px;
+                flex-direction: column;
+
+                .plus {
+                    font-size: 80px;
+                    height: 70px;
+                    color: black;
+                }
+
+                .text {
+                    font-size: $text-lg;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &-upload input[type="file"] {
+        display: none;
+    }
+
+    .img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 98%;
+        height: 300px;
+    }
+
+
+}

@@ -1,0 +1,26 @@
+ %responsive-screen {
+     @include largeDesktopView {
+         width: 100%;
+         max-width: $large-desktop;
+         margin: 0 auto;
+     }
+
+     @include desktopView {
+         width: 100%;
+         max-width: $desktop;
+         margin: 0 auto;
+     }
+
+     @include mobileView {
+         width: 100%;
+         max-width: $mobile;
+         margin: 0 auto;
+     }
+ }
+
+
+ %flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }

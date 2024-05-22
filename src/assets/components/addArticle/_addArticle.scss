@@ -1,0 +1,33 @@
+.article-container-header {
+    margin-top: 1rem;
+    width: 80%;
+    margin-right: 2px;
+
+    &-content {
+        width: 25%;
+        border: 1px solid #ccc;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: none;
+        padding: 3px 0 3px 12px;
+        font-size: $text-md;
+        font-weight: 500;
+
+        @include mobileView {
+            width: 50%;
+            font-size: $text-xs;
+            font-weight: 500;
+        }
+    }
+}
+
+.article-container {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 532px;
+    border-top-left-radius: 0;
+    position: relative;
+}
