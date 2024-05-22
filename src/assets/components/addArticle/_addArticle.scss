@@ -14,7 +14,7 @@
         padding: 3px 0 3px 12px;
         font-size: $text-md;
         font-weight: 500;
-        color: $mainColor;
+       
         @include mobileView {
             width: 50%;
             font-size: $text-xs;
