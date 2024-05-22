@@ -3,7 +3,6 @@ import TextField from "@mui/material/TextField";
 
 export default function Title({ onChange, value }) {
   return (
-    <div className="title">
       <TextField
         onChange={onChange}
         name="title"
@@ -12,6 +11,5 @@ export default function Title({ onChange, value }) {
         className="title-input"
         size="small"
       />
-    </div>
   );
 }
