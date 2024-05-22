@@ -81,7 +81,7 @@ export default function AddArticle() {
         </div>
       </div>
       <div className="article-container">
-        <form id="article-form" onSubmit={handlePublish}>
+        <form id="article-form">
           <Title value={formData.title} onChange={(e) => handleChange(e)} />
           <Description
             value={formData.description}
@@ -93,7 +93,7 @@ export default function AddArticle() {
             setImageUrl={setImageUrl}
           />
           <Button
-            onClick={handlePublish}
+           onClick={handlePublish}
             formData={formData}
             progress={progress}
           />
